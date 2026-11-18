@@ -3,6 +3,8 @@
     "description": "Manim Community Edition: engine for programmatic math animations",
     "homepage": "https://www.manim.community/",
     "license": "MIT",
+    "url": "https://raw.githubusercontent.com/ManimCommunity/manim/v0.22.1/LICENSE",
+    "hash": "c6a922fc1cfaed7ac0f87aa1dc77ebf5a3c8d1ccc5ab01da33153f0d013bf019",
     "depends": ["python", "ffmpeg"],
     "suggest": {
         "LaTeX (needed for Tex/MathTex)": "extras/miktex"
@@ -20,5 +22,8 @@
     "checkver": {
         "url": "https://pypi.org/pypi/manim/json",
         "jsonpath": "$.info.version"
+    },
+    "autoupdate": {
+        "url": "https://raw.githubusercontent.com/ManimCommunity/manim/v$version/LICENSE"
     }
 }
