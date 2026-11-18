@@ -7,7 +7,7 @@
     "hash": "c6a922fc1cfaed7ac0f87aa1dc77ebf5a3c8d1ccc5ab01da33153f0d013bf019",
     "depends": ["uv", "ffmpeg"],
     "suggest": {
-        "LaTeX (needed for Tex/MathTex)": "extras/miktex"
+        "LaTeX (needed for Tex/MathTex)": "miktex"
     },
     "installer": {
         "script": [
