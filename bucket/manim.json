@@ -5,15 +5,14 @@
     "license": "MIT",
     "url": "https://raw.githubusercontent.com/ManimCommunity/manim/v0.22.1/LICENSE",
     "hash": "c6a922fc1cfaed7ac0f87aa1dc77ebf5a3c8d1ccc5ab01da33153f0d013bf019",
-    "depends": ["python", "ffmpeg"],
+    "depends": ["uv", "ffmpeg"],
     "suggest": {
         "LaTeX (needed for Tex/MathTex)": "extras/miktex"
     },
     "installer": {
         "script": [
-            "python -m venv \"$dir\\venv\"",
-            "& \"$dir\\venv\\Scripts\\python.exe\" -m pip install --upgrade pip",
-            "& \"$dir\\venv\\Scripts\\python.exe\" -m pip install manim==$version"
+            "uv venv \"$dir\\venv\" --python 3.12",
+            "uv pip install --python \"$dir\\venv\\Scripts\\python.exe\" manim==$version"
         ]
     },
     "bin": [
